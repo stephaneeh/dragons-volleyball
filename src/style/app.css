@@ -2,14 +2,18 @@
 
 /* Brand colors */
 :root {
-    --red: #F22233;
-    --maroon: #A61F2B;
-    --yellow: #F2A413;
-    --orange: #F2561D;
+    --white: #ffffff;
+    --lightGrey: #F2F2F2;
+    --grey: #888888;
+    --darkGrey: #404040;
     --black: #0D0D0D;
-    --grey: #F2F2F2;
-    --darkGrey: #e3e3e3;
-}
+    --red: #E81D24;
+    --maroon: #800000;
+    --gold: #F2A413;
+    --orange: #F2561D;
+
+    
+  }
 /* base styles */
 * {
     margin: 0;
@@ -17,33 +21,36 @@
     color: var(--black);
   }
 
+/* ThemeToggle */
+ .themeToggle {
+    display: flex;
+    align-items: flex-end;
+}
+
+/* navbar styles */
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100px;
     padding: 0 5%;
-    border-bottom: 1px solid var(--darkGrey);
-
+    border-bottom: 1px solid var(--red);
+    /* background-color: var(--red); */
   }
-
   .navbar img {
     width: 120px;
     height: auto;
   }
-
   .navbar .links {
     display: flex;
-
   }
   .navbar a {
     text-decoration: none;
-    padding: 14px 20px;
+    padding: 20px;
   }
-
   .navbar a:hover {
-    color: var(--maroon);
-    background: var(--grey);
+    color: var(--red);
+    border-bottom: 1px solid var(--red);
     transition: 0.5s;
   }
 
